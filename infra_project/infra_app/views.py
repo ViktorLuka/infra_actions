@@ -2,8 +2,9 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse(request, 'У меня получилось!', status_code=200)
+    data = 'У меня получилось!'
+    return HttpResponse(data, status_code=200)
 
 
 def second_page(request):
-    return HttpResponse(request, 'А это вторая страница', status_code=200)
+    return HttpResponse('А это вторая страница', status_code=200)
